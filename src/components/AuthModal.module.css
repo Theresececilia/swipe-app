@@ -1,14 +1,62 @@
+form {
+   display: flex;
+   flex-direction: column; 
+}
+
+input[type=password],
+input[type=email] {
+    padding: 8px;
+    margin: 8px;
+    font-size: 17px;
+}
+
+.modalInfo {
+    font-weight: 200;
+}
+
 .authModal {
     background-color: var(--light-color);
     border-radius: 10px;
-    height: 600px;
-    left: 43%;
-    max-width: 320px;
+    height: 450px;
+    left: 0;
+    right: 0;
+    margin: 8px auto;
+    max-width: 360px;
     padding: 40px;
     position: absolute;
-    top: 175px;
+    top: 30px;
 }
 
 .close {
     cursor: pointer;
+    float: right;
+}
+
+.secondaryBtn {
+    color: var(--medium-color);
+    background-color: var(--light-color);
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 12px 30px;
+    border-radius: 30px;
+    border: solid 2px var(--medium-color);
+    margin-top: 12px;
+}
+
+.secondaryBtn:hover {
+    border: solid 2px var(--dark-color);
+    color: var(--dark-color);
+}
+
+@media screen and (max-width: 768px) {
+    form {
+        gap: 8px;
+     }
+
+     
+.authModal {
+    margin: 10px;
+    top: 70px;
+}
+     
 }

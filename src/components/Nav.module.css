@@ -10,21 +10,59 @@
 }
 
 .logo {
-    width: 170px;
+    width: 120px;
 }
 
 .navBtn {
-    background-color: var(--dark-green);
+    background-color: var(--light-green);
     border: none;
     border-radius: 10px;
     color: var(--light-color);
     font-size: 20px;
     height: 55px;
     margin: 10px;
-    padding: 14px 20px;
+    padding: 0 20px;
 }
 
 .navBtn:disabled {
     background-color: #18200e;
     color: #c4cac2;
+}
+
+.navBtn:hover {
+    box-shadow: 1px 0 5px #222;
+}
+
+.burger {
+   display: none;
+}
+
+@media screen and (max-width: 768px) {
+    
+    .innerNav {
+        display: flex;
+    }
+
+    .burger {
+        display: block;
+        margin: 10px;
+        height: 40px;
+        width: 40px;
+     }
+
+     .logoContainer {
+        margin-top: 10px;
+        width: 120px;
+    }
+
+    .logo {
+        width: 100px;
+    }
+     
+     .navBtn {
+        font-size: 16px;
+        height: 42px;
+        padding: 0 14px;
+    }
+
 }

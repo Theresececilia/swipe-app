@@ -1,11 +1,13 @@
 import classes from './Nav.module.css'
 import logo from '../assets/logo.png'
+import burger from '../assets/burger.png'
 
 
-const Nav = ({ authToken, minimal, setShowModal, showModal }) => {
+const Nav = ({ authToken, minimal, setShowModal, showModal, setIsSignUp }) => {
   
   const handleClick = () => {
     setShowModal(true)
+    setIsSignUp(false)
   }
 
   return (
@@ -13,8 +15,11 @@ const Nav = ({ authToken, minimal, setShowModal, showModal }) => {
       <div className={classes.logoContainer}>
         <img className={classes.logo} src={logo} alt="logo" />
       </div>
-      {!authToken && !minimal && 
-      <button className={classes.navBtn} onClick={handleClick} disabled={showModal}>Log in</button>}
+      <div className={classes.innerNav}>
+        {!authToken && !minimal && 
+        <button className={classes.navBtn} onClick={handleClick} disabled={showModal}>Log in</button>}
+        <img className={classes.burger} src={burger} alt="menu"/>
+      </div>
     </nav>
   )
 }
