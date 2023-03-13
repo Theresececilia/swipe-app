@@ -1,0 +1,14 @@
+.authModal {
+    background-color: var(--light-color);
+    border-radius: 10px;
+    height: 600px;
+    left: 43%;
+    max-width: 320px;
+    padding: 40px;
+    position: absolute;
+    top: 175px;
+}
+
+.close {
+    cursor: pointer;
+}
