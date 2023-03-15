@@ -152,7 +152,7 @@ const OnBoarding = () => {
                    value={formData.about}
                    onChange={handleChange}
                    />
-                   <input type='submit'/>
+                   
                 </section>
                 <section>
                     <label htmlFor='about'>Profile Picture</label>
@@ -172,7 +172,7 @@ const OnBoarding = () => {
                     type="file" 
                     id="myfile" 
                     name="myfile" />
-
+                    <input type='submit'/>
                 </section>
             </form>
         </div>
