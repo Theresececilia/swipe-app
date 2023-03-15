@@ -1,0 +1,76 @@
+.onboarding {
+    border-top: solid 1px rgb(219, 219, 219);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    text-align: left;
+    width: 35%;
+}
+
+.form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.form label {
+    margin: 10px 0
+}
+
+.form input {
+    border: solid 1px rgb(219, 219, 219);
+    border-radius: 10px;
+    font-size: 16px;
+    margin: 10px 0 ;
+    padding: 15px 30px;
+    
+}
+
+.form .photoContainer img {
+    width: 100%;
+}
+
+
+.form .multipleInput {
+    display: flex;
+}
+
+.form .multipleInput input {
+    margin-right: 10px;
+}
+
+.form .multipleInput label {
+    border: solid 1px rgb(194, 194, 194);
+    border-radius: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    transition: all 0.3s;
+}
+
+.form input[type="checkbox"] {
+    margin-left: 5px;
+}
+
+.form input[type="radio"] {
+    display: none;
+}
+
+.form .multipleInput input[type="radio"]:checked + label {
+    background-color: var(--light-green);
+}
+
+.form .multipleInput input[type="number"] {
+    width: 40px;
+}
+
+.form .multipleInput input[type="submit"]:hover {
+    background-color: rgb(235, 235, 235);
+}
+
+.form .multipleInput input[type="submit"]:active {
+    background-color:  var(--light-orange);
+}

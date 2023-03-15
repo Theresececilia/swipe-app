@@ -3,13 +3,13 @@ import logo from '../assets/logo.png'
 import burger from '../assets/burger.png'
 
 
-const Nav = ({ authToken, minimal, setShowModal, showModal, setIsSignUp }) => {
+const Nav = ({ minimal, setShowModal, showModal, setIsSignUp }) => {
   
   const handleClick = () => {
     setShowModal(true)
     setIsSignUp(false)
   }
-
+  const authToken = false
   return (
     <nav className={classes.nav}>
       <div className={classes.logoContainer}>
